@@ -99,7 +99,7 @@ def enumpure_solve(game: libgbt.Game) -> NashComputationResult:
 def enumpure_agent_solve(game: libgbt.Game) -> NashComputationResult:
     """Compute all :ref:`pure-strategy agent Nash equilibria <gambit-enumpure>` of game.
 
-    .. versioncadded:: 16.5.0
+    .. versionadded:: 16.5.0
 
        Formerly implemented as `enumpure_solve` with `use_strategic=False`.
 
@@ -343,12 +343,12 @@ def liap_solve(
         regret of any player must be no more than `maxregret` times the
         difference of the maximum and minimum payoffs of the game
 
-        .. versionadded: 16.2.0
+        .. versionadded:: 16.2.0
 
     maxiter : int, default 1000
         Maximum number of iterations in function minimization.
 
-        .. versionadded: 16.2.0
+        .. versionadded:: 16.2.0
 
     Returns
     -------
@@ -441,7 +441,7 @@ def simpdiv_solve(
         regret of any player must be no more than `maxregret` times the
         difference of the maximum and minimum payoffs of the game
 
-        .. versionadded: 16.2.0
+        .. versionadded:: 16.2.0
 
     refine : int, default 2
         This controls the rate at which the triangulation of the space of mixed strategy
@@ -560,7 +560,7 @@ def gnm_solve(
         .. versionadded:: 16.2.0
 
     steps : int, default 100
-        The number of steps to take within a support cell.  Lqrger values
+        The number of steps to take within a support cell.  Larger values
         trade off speed for security in tracing the path.
 
         .. versionadded:: 16.2.0
